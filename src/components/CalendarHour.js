@@ -12,6 +12,7 @@ class CalendarMonth extends Component {
   render() {
     return (
         <div>
+            <h1>HOUR</h1>
             <Calendar
               onClickDay={this.onChange}
               value={this.state.date}
