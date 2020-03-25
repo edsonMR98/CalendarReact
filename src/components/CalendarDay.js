@@ -5,6 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 class CalendarDay extends Component {
   state = {
     date: new Date(),
+    week: 
   }
 
   onChange = date => this.setState({ date })
