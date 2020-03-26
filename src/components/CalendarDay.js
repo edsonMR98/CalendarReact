@@ -5,7 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 class CalendarDay extends Component {
   state = {
     date: new Date(),
-    week: 
+    week: 0
   }
 
   onChange = date => this.setState({ date })
@@ -15,7 +15,7 @@ class CalendarDay extends Component {
         <div>
             <h1>DAY</h1>
             <Calendar
-              onClickWeekNumber={this.onChange}
+              onClickWeekNumber={n => this.setState({week: n})}
               value={this.state.date}
               minDate={new Date("2020-01-02T00:00:00.000Z")}
               maxDate={new Date("2020-12-31T23:59:00.000Z")}
@@ -30,6 +30,7 @@ class CalendarDay extends Component {
               view={'year'}
             />
             <h1>{this.state.date.toISOString()}</h1>
+            <h1>{this.state.week}</h1>
         </div>
         
     );
