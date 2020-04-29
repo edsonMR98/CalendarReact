@@ -2,6 +2,11 @@
 
 This project was created to test the [react-calendar](http://projects.wojtekmaj.pl/react-calendar/) component. The main idea is to customize it for different scenarios.
 
+The user must have the option to select:
+- A day
+- A month
+- A year
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
